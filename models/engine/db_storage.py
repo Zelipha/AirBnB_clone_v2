@@ -92,5 +92,4 @@ class DBStorage:
         """
         calls remove() method on the pricate session attribute
         """
-        if self.__session:
-            self.__session.close()
+        self.__session.remove()
